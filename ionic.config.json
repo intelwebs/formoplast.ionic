@@ -2,5 +2,6 @@
   "name": "formoplast",
   "type": "custom",
   "integrations": {
+    "cordova": {}
   }
 }
