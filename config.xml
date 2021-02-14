@@ -1,3 +1,28 @@
+<widget id="ru.intelwebs.formoplast" version="1.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Формопласт</name>
+    <description>
+        Данные компании Формопласт
+    </description>
+    <author email="mail@intelwebs.ru" href="http://intelwebs.ru">
+        Intelwebs
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="StatusBarBackgroundColor" value="#343e50" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="android-minSdkVersion" value="14" />
+    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+    <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.4.1" />
+    <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-webviewcolor" source="npm" />
 <icon src="resources/ios/icon/icon-20@2x.png" gap:platform="android" gap:density="ldpi" /> 
 <platform name="android">
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -33,3 +58,18 @@
     <splash height="1334" src="resources/ios/splash/750.png" width="750" />
     <splash height="2208" src="resources/ios/splash/1242.png" width="1242" />
 </platform>
+        <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
